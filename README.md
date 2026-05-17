@@ -2,9 +2,9 @@
 
 # Jellybrain (WIP)
 
-**AI co-founder for startup todos, reminders, and follow-ups.**
+**AI co-founder for startup tasks, reminders, and follow-ups.**
 
-Jellybrain turns scattered startup work from emails, meetings, Slack, outbound campaigns, and docs into clear todos, reminders, and daily priorities.
+Jellybrain turns scattered startup work from emails, meetings, Slack, outbound campaigns, and docs into clear tasks, reminders, and daily priorities.
 
 [![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19-149eca?logo=react&logoColor=white)](https://react.dev/)
@@ -32,7 +32,7 @@ Jellybrain turns scattered startup work from emails, meetings, Slack, outbound c
 
 Jellybrain is a lightweight AI co-founder and chief-of-staff for startup teams.
 
-The first version is a shared company todo tracker. Over time, Jellybrain should become an operating layer that connects to Gmail, Google Calendar, Instantly, Slack, and Google Drive so teams can stop manually checking every tool all day.
+The first version is a shared company task tracker. Over time, Jellybrain should become an operating layer that connects to Gmail, Google Calendar, Instantly, Slack, and Google Drive so teams can stop manually checking every tool all day.
 
 Jellybrain is not meant to replace a founder. It is meant to help founders notice what matters, remember what was promised, and make sure important follow-ups do not get missed.
 
@@ -56,16 +56,16 @@ What needs attention today?
 
 ## MVP Scope
 
-The MVP is a web app for a shared company todo list.
+The MVP is a web app for a shared company task list.
 
 Core requirements:
 
-- Create todos manually
-- Assign todos to team members
+- Create tasks manually
+- Assign tasks to team members
 - Set due dates and priorities
-- Mark todos as complete
-- View overdue, due today, and upcoming todos
-- Attach basic company context to todos
+- Mark tasks as complete
+- View overdue, due today, and upcoming tasks
+- Attach basic company context to tasks
 - Show a simple team dashboard
 - Produce a daily reminder digest
 
@@ -79,11 +79,11 @@ The first goal is not full autonomy. The first goal is to make it obvious:
 
 ## Product Areas
 
-### Todo Tracker
+### Task Tracker
 
-The todo tracker is the center of the product.
+The task tracker is the center of the product.
 
-Each todo should support:
+Each task should support:
 
 | Field | Purpose |
 | --- | --- |
@@ -94,11 +94,11 @@ Each todo should support:
 | Due date | When it needs to happen |
 | Priority | How important it is |
 | Related person | Investor, customer, candidate, or partner |
-| Related company | Company connected to the todo |
+| Related company | Company connected to the task |
 | Related source | Gmail, Calendar, Slack, Instantly, Drive, or manual |
 | Notes/context | Relevant background |
 
-Example todos:
+Example tasks:
 
 - Follow up with a prospective investor about intro requests
 - Reply to a customer asking about onboarding
@@ -122,7 +122,7 @@ Gmail should detect conversations that need action:
 - A customer sent requirements
 - A candidate asked a question
 - A thread has gone stale
-- A founder promised to send something but no todo exists
+- A founder promised to send something but no task exists
 
 ### Google Calendar
 
@@ -132,11 +132,11 @@ Calendar should support meeting prep and post-meeting follow-up:
 - Show today's meetings beside today's tasks
 - Attach relevant company and person context to meetings
 - Remind the team when a meeting happened but no next steps were created
-- Suggest todos after meetings
+- Suggest tasks after meetings
 
 ### Instantly
 
-Instantly should feed outbound and reply activity into the todo system:
+Instantly should feed outbound and reply activity into the task system:
 
 - Candidate replied interested
 - Investor replied
@@ -149,7 +149,7 @@ Instantly should feed outbound and reply activity into the todo system:
 
 Slack should become the team command center and a source of operational context.
 
-Jellybrain should ingest relevant Slack conversations, understand what the team talks about, and turn loose commitments into reminders, suggested todos, and follow-up prompts.
+Jellybrain should ingest relevant Slack conversations, understand what the team talks about, and turn loose commitments into reminders, suggested tasks, and follow-up prompts.
 
 Examples:
 
@@ -164,18 +164,18 @@ Expected Slack features:
 
 - Ingest selected channels and threads
 - Detect commitments, asks, blockers, and follow-ups
-- Create suggested todos from conversations
+- Create suggested tasks from conversations
 - Send daily reminders in Slack
 - Send overdue task alerts
 - Remind owners about promised follow-ups
-- Create todos from Slack commands
-- Mark todos done from Slack
+- Create tasks from Slack commands
+- Mark tasks done from Slack
 - Answer what needs attention today
 
 Example commands:
 
 ```txt
-/add todo follow up with demo lead tomorrow
+/add task follow up with demo lead tomorrow
 /show overdue
 /what needs my attention today
 /mark done send investor deck
@@ -237,7 +237,7 @@ Relevant context:
 | Phase | Focus | Status |
 | --- | --- | --- |
 | 0 | Repo setup, app shell, product direction | In progress |
-| 1 | Shared todo list with owners, due dates, priorities, and statuses | Planned |
+| 1 | Shared task list with owners, due dates, priorities, and statuses | Planned |
 | 2 | Today, overdue, upcoming, and team dashboard views | Planned |
 | 3 | Daily reminder digest | Planned |
 | 4 | Basic Slack reminders and commands | Planned |
@@ -252,7 +252,7 @@ For the MVP, Jellybrain should be conservative.
 
 It can:
 
-- Create suggested todos
+- Create suggested tasks
 - Remind the team
 - Summarize context
 - Draft possible follow-ups

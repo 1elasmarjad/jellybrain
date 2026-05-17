@@ -17,3 +17,15 @@ Convex agent skills for common tasks can be installed by running
 `npx convex ai-files install`.
 
 <!-- convex-ai-end -->
+
+## Frontend components
+
+All reusable UI primitives must live in shared components. Do not create one-off buttons, inputs, badges, cards, dropdowns, modals, or form controls inline inside pages.
+
+Before adding UI, check for an existing component first. If no suitable component exists, create or extend a shared component instead of styling a new one-off element.
+
+Preferred locations:
+- `components/ui/` for primitives like Button, Input, Select, Badge, Card, Dialog
+- `components/` for product-specific composed components
+
+Buttons must use the shared `Button` component. New button variants should be added to the component API, not recreated with custom Tailwind classes in page files.
